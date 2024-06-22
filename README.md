@@ -1,5 +1,6 @@
 This project was completed using R and ARENA.
-* All .dft files are from the ARENA output.
+* All .dft files are from the ARENA input analyzer.
+* The ARENA model could not be uploaded.
 
 To enhance transportation flow at street intersections, it is imperative to establish
  proper coordination among the signals and traffic lights that manage the flow of traffic
