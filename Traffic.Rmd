@@ -1,0 +1,38 @@
+---
+title: "7th Street Intersection Descriptive Statistics"
+author: "Toby & Morgan"
+date: "2023-03-28"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(psych)
+```
+
+```{r}
+data <- read_csv("7thStreetIntersectionData.csv")
+arrival <- data %>% select(Seventh_IA, Seventh_OA,
+                           Wayne_OA, Wayne_IA,
+                           Locust_EA, Locust_WA)
+green <- data %>% select(Seventh_IG, Seventh_OG,
+                           Wayne_OG, Wayne_IG,
+                           Locust_EG, Locust_WG)
+red <- data %>% select(Seventh_IR, Seventh_OR,
+                           Wayne_OR, Wayne_IR,
+                           Locust_ER, Locust_WR)
+```
+
+```{r}
+describe(arrival)
+```
+
+```{r}
+describe(green)
+```
+
+```{r}
+describe(red)
+```
+
